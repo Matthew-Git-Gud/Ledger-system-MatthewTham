@@ -4,6 +4,10 @@ A demonstration financial ledger built for a software engineering take-home assi
 
 > **Scope:** Educational/demo application using fictional accounts and fixed exchange rates. Not intended for production financial use. Java was preferred in the brief; JavaScript was chosen for implementation familiarity and the assignment time budget.
 
+For an explanation of the design questions considered before
+development and how they were addressed, see
+(DESIGN_QUESTIONS_AND_SOLUTIONS.md)
+
 ## Technology
 
 - **Backend:** Node.js (ES modules), Express 4, MySQL 8/InnoDB, mysql2, decimal.js
@@ -186,6 +190,4 @@ These checks establish observed correctness for tested scenarios; they do not co
 - Historical month-end reconciliation depends on available historical snapshot evidence; missing evidence yields `NOT_VERIFIABLE`.
 - No production deployment, operational monitoring, or financial regulatory controls are included.
 
-## Submission
 
-Provide the GitHub repository URL. Exclude real `.env` files, credentials, `node_modules`, build outputs, and database exports containing sensitive information.
