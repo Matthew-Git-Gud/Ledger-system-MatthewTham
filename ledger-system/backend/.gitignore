@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!.env.test.example
+!**/.env.example
+!**/.env.test.example
+
+# Build output
+frontend/dist/
+**/dist/
+coverage/
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sql.gz
+*.sql.zip

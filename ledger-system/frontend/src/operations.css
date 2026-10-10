@@ -1,0 +1,138 @@
+
+.operations-heading {
+  margin: 38px 0 20px;
+}
+
+.operations-heading h2 {
+  font-size: 23px;
+  margin: 8px 0;
+}
+
+.operations-heading > p:last-child {
+  color: #79879b;
+  font-size: 13px;
+}
+
+.operations-spacing {
+  margin-top: 24px;
+}
+
+.operation-panel {
+  overflow: hidden;
+}
+
+.operation-form {
+  display: grid;
+  gap: 20px;
+  padding: 25px;
+  max-width: 620px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #34445d;
+}
+
+.form-group input,
+.form-group select,
+.account-filter {
+  height: 44px;
+  border: 1px solid #dce3ed;
+  border-radius: 8px;
+  padding: 0 12px;
+  background: white;
+  color: #1c2940;
+  font: inherit;
+  font-size: 13px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.account-filter:focus {
+  outline: 2px solid #c8d9ff;
+  border-color: #6490e5;
+}
+
+.field-hint {
+  font-size: 12px;
+  color: #8491a3;
+  line-height: 1.5;
+}
+
+.operation-notice {
+  padding: 15px;
+  border-radius: 8px;
+  background: #edf4ff;
+  color: #4169ae;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  background: #326bd9;
+  color: white;
+  border: 1px solid #326bd9;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #265ac0;
+}
+
+.btn-small {
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
+.operation-success {
+  padding: 16px;
+  background: #eaf8f0;
+  border: 1px solid #c5ebd6;
+  color: #187c52;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.operation-success p {
+  margin: 5px 0;
+  color: #187c52;
+}
+
+.transaction-heading {
+  gap: 15px;
+}
+
+.account-filter {
+  min-width: 230px;
+  max-width: 100%;
+}
+
+.operation-message {
+  padding: 18px 24px 0;
+}
+
+.operation-message .alert {
+  margin-bottom: 0;
+}
+
+@media (max-width: 650px) {
+  .transaction-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account-filter {
+    width: 100%;
+  }
+
+  .operation-form {
+    padding: 18px;
+  }
+}
